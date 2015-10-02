@@ -1,0 +1,18 @@
+<div ng-show="reviews.length > 0" class="col-md-4 reviews-col">
+	<span>
+		<h5 ng-repeat="item in reviews" ng-click="getReview()">
+		<a ui-sref='reviewPage({reviewId: item.id})' class="button btn btn-large btn-warning">{{ item.title }}</a>
+		</h5>
+	</span>
+</div>
+
+
+<div class="col-md-8 reviews-col center-text">
+	<div class="row">
+		<h4>Wanna skim over some snarky snippets on silly cinema?</h4>
+		<p class="indent-justify">
+			Well, you've come to the right place. At Nick's Flicks, we pride ourselves on having the most smart-assed, opinionated hipster movie bloggers around. If a movie is even close to being a mainstream hit, our bloggers will tear it to pieces no matter how good it is.</p>
+			<p class="indent-justify"> Click on a link to the left to see what I mean. Or, if you think you've got what it takes, leave a review of your own. Does your biting sarcasm and razor sharp wit stack up with our seasoned celebrity bashers? There's only one way to find out...."
+		</p>
+	</div>
+</div>

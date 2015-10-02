@@ -1,0 +1,25 @@
+<div ng-show="reviews.length > 0" class="col-md-4 reviews-col">
+	<span ng-model="review">
+		<h5 ng-repeat="item in reviews">
+					<a ui-sref="reviewPage({reviewId: item.id})" class="button btn btn-large btn-warning" ng-model="review">{{ item.title }}</a>
+			</h5>
+	</span>
+</div>
+</div>
+
+<div class="col-md-8 reviews-col center-text" ng-model="review">
+	<div class="well">
+		<h3>{{ review.title }}</h3>
+		<p>{{ review.text }} and stuff </p>
+	</div>
+	<h3>Add A Review</h3>
+	<form ng-submit="factory.addReview()">
+		<div class="form-group" id="input-label">
+			<label id="input-label" for="new_reviewTitle" name="new-reviewTitle">Enter a caption for your review:</label>
+			<input type="text" class="form-control" id="new-reviewTitle" ng-model="factory.reviewTitle" placeholder="caption" required>
+			<label id="input-label" for="new-reviewText">Your Review:</label>
+			<textarea class="form-control" id="new-reviewText" ng-model="factory.reviewText" placeholder="review" required>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>

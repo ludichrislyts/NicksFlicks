@@ -1,6 +1,32 @@
-header{
+.header{
 	border-bottom: 1px;
-	border-bottom-style: ridge;
+	border-bottom-style: inset;
 	border-bottom-color: black;
 	padding-left: 2%;
+	padding-bottom: 2%;
+	background-color: lightgray;
+}
+.home-page{
+	text-align: center;
+	margin-top: 300px;
+}
+.reviews-col{
+	margin-top: 200px;
+}
+.home-button{
+	text-align: right;
+	padding: 10px;
+	margin-top: 10px;
+}
+.center-text{
+	text-align: center;
+}
+#input-label{
+	text-align: left;
+}
+.indent-justify{
+	margin-top: 20px;
+	text-align: justify;
+	padding-left: 200px;
+	padding-right: 200px;
 }
