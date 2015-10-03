@@ -7,6 +7,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
 		views:{
 			'header':{
 				templateUrl: "partials/header.html",
+				controller: "ReviewsCtrl",
 			},
 			'body':{
 				templateUrl: "partials/home.html",
@@ -19,6 +20,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
 		views:{
 			'header':{
 				templateUrl: "partials/header.html",
+				controller: "ReviewsCtrl",
 			},
 			'body':{
 				templateUrl: "partials/reviews.html",
@@ -32,6 +34,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
 		views:{
 			'header':{
 				templateUrl: "partials/header.html",
+				controller: "ReviewsCtrl",
 			},
 			'body':{
 				templateUrl: "partials/review.html",

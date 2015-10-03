@@ -6,6 +6,11 @@ nicksFlicks.controller('ReviewsCtrl', function ReviewsCtrl($scope, $stateParams,
 	
 
 	$scope.review = UtilitiesFactory.findById(ReviewsFactory.reviews, $stateParams.reviewId);
+	
+	$stateParams.night = function(){
+		var element = document.getElementById('mainbody');
+		element.toggleClass("nightmode");
+	}
 
 	
 	// variable to toggle show individual review

@@ -21,7 +21,7 @@
 .center-text{
 	text-align: center;
 }
-#input-label{
+.input-label{
 	text-align: left;
 }
 .indent-justify{
@@ -31,7 +31,5 @@
 	padding-right: 200px;
 }
 .nightmode{
-	webkit-filter: invert 100%;
-	-moz-filter: invert 100%;
 	background-color: black;
 }

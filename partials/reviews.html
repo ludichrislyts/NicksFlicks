@@ -1,4 +1,5 @@
-<div ng-show="reviews.length > 0" class="col-md-4 reviews-col" id="main" ng-class="{nightmode: night}">
+<div ng-show="reviews.length > 0" class="col-md-4 reviews-col" id="main">
+	  <div class="row">Click me</div>
 	<span>
 		<h5 ng-repeat="item in reviews">
 		<a ui-sref='reviewPage({reviewId: item.id})' class="button btn btn-large btn-warning">{{ item.title }}</a>

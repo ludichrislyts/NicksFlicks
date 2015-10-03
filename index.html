@@ -19,7 +19,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="main" ng-class="{nightmode: night}">
+<body ng-controller="ReviewsCtrl" id="main">
+			<!--<button ng-show="!night" ng-click="night = true">Night Mode</button>
+			<button ng-show="night" ng-click="night = false">Night Mode off</button>-->
   <div ui-view="header"></div>
   <div class="container">
     <div ui-view="body"></div>
