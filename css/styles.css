@@ -30,3 +30,8 @@
 	padding-left: 200px;
 	padding-right: 200px;
 }
+.nightmode{
+	webkit-filter: invert 100%;
+	-moz-filter: invert 100%;
+	background-color: black;
+}

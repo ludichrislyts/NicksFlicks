@@ -38,6 +38,13 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider){
 				controller: "ReviewsCtrl",
 			},
 		}
-	});
+	});// end reviews route
+	
+	// $stateProvider.state('reviewPage',{
+	// 	url:"/:reviews/reviewId",
+	// 	views:{
+			
+	// 	}
+	// })
 
 });// end config function

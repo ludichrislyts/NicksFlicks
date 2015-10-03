@@ -1,8 +1,8 @@
-nicksFlicks.directive("toggleBool", function(){
+nicksFlicks.directive("changeClass", function(){
 	return function (scope, element, attrs){
 		element.bind("click", function(){
-			if(element == true){element = false;}
-			else{element = true;}
+			var ele = document.getElementById("main");
+			ele.addClass(attrs.changeClass);
 		});
 	}		
 });

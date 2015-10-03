@@ -1,7 +1,11 @@
-<div class="row">
+<div class="row" id="main" ng-class="{'nightmode': night}">
 	<div class="col-md-12 navbar-fixed-top header">
 		<h2>Nicks Flicks</h2>
 		<h4>Let's talk about movies!</h4><br />
-		<a href="/" class="button btn-large btn-primary home-button">HOME</a>
+		<div class="inline">
+			<a href="/" class="button btn-large btn-primary home-button">HOME</a>
+			<button ng-model="night">Night Mode</button>
+		</div>
+		
 	</div>
 </div>
